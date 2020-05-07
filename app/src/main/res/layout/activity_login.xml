@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editUsernameLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerInParent="true"
+        android:inputType="textPersonName"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:hint="Enter username" />
+
+    <EditText
+        android:id="@+id/editPasswordLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editUsernameLog"
+        android:inputType="textPersonName"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:hint="Enter password" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="LoginMethod"
+        android:layout_below="@id/editPasswordLog"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:text="login" />
+    <Button
+        android:id="@+id/SignButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SignUpMethod"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_below="@id/loginButton"
+        android:backgroundTintMode="screen"
+        android:text="New user? SIGN UP" />
+</RelativeLayout>
